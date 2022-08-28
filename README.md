@@ -1,2 +1,9 @@
 # nmap-inventory
-parses an nmap ARP scan in XML format and outputs MAC, IP and vendor
+
+Step 1: run an nmap ARP discovery scan:
+
+```bash
+nmap -sn 192.168.1.0/24 -oX inventory.xml
+```
+
+Step 2: run this script in the same dir.
